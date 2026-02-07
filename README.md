@@ -62,7 +62,7 @@ This function automatically gets exported as the endpoint `{package}.instant.hos
 
 ### 6. Rapid prototyping
 
-Superuser provides both an online IDE and [command line utility](https://github.com/superuserapp/superuser-cli) that allow you to rapidly iterate on your hosted tool packages. You can use either to test your tools with specific parameters — our online IDE has a **\[Run]** button with configurable payloads, and our CLI provides `ibot run /tool-name --param1=value`.
+Superuser provides both an online IDE and [command line utility](https://github.com/superuserapp/superuser-cli) that allow you to rapidly iterate on your hosted tool packages. You can use either to test your tools with specific parameters — our online IDE has a **\[Run]** button with configurable payloads, and our CLI provides `sutr run /tool-name --param1=value`.
 
 Deploying to our hosted tool platform is instant, averaging \~3s per deploy, meaning testing via our online IDE is nearly as fast as building locally!
 

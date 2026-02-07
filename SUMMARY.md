@@ -42,5 +42,5 @@
 ## Resources
 
 * [Superuser](https://superuser.app)
-* [ibot command line tools](https://github.com/superuserapp/superuser-cli)
+* [sutr command line tools](https://github.com/superuserapp/superuser-cli)
 * [Instant API](https://github.com/instant-dev/api)

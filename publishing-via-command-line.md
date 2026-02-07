@@ -4,7 +4,7 @@ description: Using the Superuser command line tools
 
 # Publishing via command line
 
-## Installing ibot
+## Installing sutr
 
 Our command line tools are available at [github.com/superuserapp/superuser-cli](https://github.com/superuserapp/superuser-cli). For the most up to date guide on using the command line tools, please check the repository. This page exists as a quick getting started guide.
 
@@ -13,29 +13,29 @@ Our command line tools are available at [github.com/superuserapp/superuser-cli](
 To initialize a new Superuser package:
 
 ```sh
-$ npm i ibot -g
+$ npm i sutr -g
 $ mkdir new-package
 $ cd new-package
-$ ibot init
+$ sutr init
 ```
 
-You'll be walked through the process. The `ibot` CLI will automatically check for updates to core packages, so make sure you update when available. To play around with your Superuser package locally;
+You'll be walked through the process. The `sutr` CLI will automatically check for updates to core packages, so make sure you update when available. To play around with your Superuser package locally;
 
 ```sh
-$ ibot serve
+$ sutr serve
 ```
 
 Will start an HTTP server. To execute a standalone endpoint / tool:
 
 ```sh
 # run functions/index.js
-$ ibot run /
+$ sutr run /
 
 # run functions/some-endpoint.js
-$ ibot run some-endpoint
+$ sutr run some-endpoint
 
 # run functions/index.js with {"name":"hello"} POST parameters
-$ ibot run / --name hello
+$ sutr run / --name hello
 ```
 
 ## Creating tools aka endpoints
@@ -49,7 +49,7 @@ All endpoints for Superuser packages live in the `functions/` directory. Each fi
 You can create a new endpoint with:
 
 ```sh
-$ ibot g:endpoint hello
+$ sutr g:endpoint hello
 ```
 
 ```javascript
@@ -92,14 +92,14 @@ Note that the code for public projects will be shared publicly for anybody to se
 To deploy a public project to a `development` environment, you can use:
 
 ```
-$ ibot up
+$ sutr publish
 ```
 
 You can also publish to `staging` and `production` using:
 
 ```
-$ ibot up --env staging
-$ ibot up --env production
+$ sutr publish --env staging
+$ sutr publish --env production
 ```
 
 ### Private packages
@@ -130,15 +130,15 @@ There are a few additional utilities you may find useful with this package;
 
 ```sh
 # generates functions/my-endpoint/example.js
-$ ibot g:endpoint my-endpoint/example
+$ sutr g:endpoint my-endpoint/example
 ```
 
 ### Generate tests
 
 ```sh
 # Generate blank tests or ones for an endpoint
-$ ibot g:test my_test # OR ...
-$ ibot g:test --endpoint my-endpoint/example
+$ sutr g:test my_test # OR ...
+$ sutr g:test --endpoint my-endpoint/example
 ```
 
 ### Run tests
@@ -146,7 +146,7 @@ $ ibot g:test --endpoint my-endpoint/example
 You can write tests for your tools to verify they work. Simply run;
 
 ```sh
-$ ibot test
+$ sutr test
 ```
 
 Your tests in the `test/` directory will be run top-down with shallow folders first, and alphabetically.

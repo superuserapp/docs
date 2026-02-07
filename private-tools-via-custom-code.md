@@ -56,11 +56,11 @@ NPM packages will be installed automatically. We support any NPM package without
 
 ## Writing complex functionality
 
-If you're not happy with our online IDE, you can eject at any time to our [command line tools — ibot](https://github.com/superuserapp/superuser-cli). You just need to make sure you have the correct **name** set in `instant.package.json`.
+If you're not happy with our online IDE, you can eject at any time to our [command line tools — sutr](https://github.com/superuserapp/superuser-cli). You just need to make sure you have the correct **name** set in `instant.package.json`.
 
 <figure><img src=".gitbook/assets/SCR-20250515-bmxb.png" alt=""><figcaption><p>Set the package name properly</p></figcaption></figure>
 
-The `ibot` command line utilities allow you to check your work into git, write tests and more. Please [check out our CLI on Github](https://github.com/superuserapp/superuser-cli).
+The `sutr` command line utilities allow you to check your work into git, write tests and more. Please [check out our CLI on Github](https://github.com/superuserapp/superuser-cli).
 
 ## Changing timeout
 
