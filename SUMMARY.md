@@ -41,6 +41,6 @@
 
 ## Resources
 
-* [Instant.chat](https://instant.chat)
-* [ibot command line tools](https://github.com/instantbots/ibot)
+* [Superuser](https://superuser.app)
+* [ibot command line tools](https://github.com/superuserapp/superuser-cli)
 * [Instant API](https://github.com/instant-dev/api)
