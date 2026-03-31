@@ -48,8 +48,8 @@ Connections are how you deploy your agent to places where you work or you expect
 
 We have the following connections planned;
 
-* [Slack](../using-your-agent/slack.md)
-* [Website embed](../using-your-agent/website-embed.md)
-* [Developer API](../using-your-agent/developer-api.md)
+* [Slack](/broken/pages/sJ1CpPxOMJ189w5Mi9Iu)
+* [Website embed](/broken/pages/8Cgomqnnj60nwzneQOMA)
+* [Developer API](/broken/pages/a6JE07vXmhQtq9AAe9Qg)
 
 You can reach out to us at [feedback@superuser.app](mailto:feedback@superuser.app) if you'd like anything prioritized here!

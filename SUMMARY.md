@@ -23,9 +23,6 @@
 
 * [On the web](using-your-agent/on-the-web.md)
 * [Discord](using-your-agent/discord.md)
-* [Slack](using-your-agent/slack.md)
-* [Website embed](using-your-agent/website-embed.md)
-* [Developer API](using-your-agent/developer-api.md)
 
 ## Package registry
 
@@ -36,5 +33,5 @@
 ## Resources
 
 * [Superuser](https://superuser.app)
-* [sutr command line tools](https://github.com/superuserapp/superuser-cli)
-* [Instant API](https://github.com/instant-dev/api)
+* [Superuser CLI](https://github.com/superuserapp/superuser-cli)
+* [Instant API (Package Spec)](https://github.com/instant-dev/api)

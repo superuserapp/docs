@@ -1,5 +1,5 @@
 ---
-description: A brief introduction to Superuser and what we're all about
+description: A brief introduction to Superuser
 ---
 
 # Introduction
@@ -61,4 +61,4 @@ You can view up-to-date pricing at [Superuser / Pricing](https://superuser.app/p
   * Overage is charge per-token to your credit balance
 * We charge per-use for hosted tools at a rate of 50 credits per 1,000 GB-s of usage
   * 200ms execution for a hosted tool with 512MB of RAM is 0.005 credits
-  * Meaning 1,000 function calls at this rate would be 5 credits
+  * 1,000 function calls at this rate would be 5 credits
