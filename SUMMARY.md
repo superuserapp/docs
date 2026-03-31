@@ -32,8 +32,6 @@
 
 ## Package registry
 
-***
-
 * [Publishing via command line](publishing-via-command-line.md)
 * [Publishing via online IDE](publishing-via-online-ide.md)
 * [Browsing and finding packages](browsing-and-finding-packages.md)
