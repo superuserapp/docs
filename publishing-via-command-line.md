@@ -4,7 +4,7 @@ description: Using the Superuser command line tools
 
 # Publishing via command line
 
-## Installing sutr
+## Installing `sup`: Superuser Package Manager
 
 Our command line tools are available at [github.com/superuserapp/superuser-cli](https://github.com/superuserapp/superuser-cli). For the most up to date guide on using the command line tools, please check the repository. This page exists as a quick getting started guide.
 
@@ -13,29 +13,29 @@ Our command line tools are available at [github.com/superuserapp/superuser-cli](
 To initialize a new Superuser package:
 
 ```sh
-$ npm i sutr -g
+$ npm i superuser.app -g
 $ mkdir new-package
 $ cd new-package
-$ sutr init
+$ sup init # sup is cli tool for superuser.app
 ```
 
-You'll be walked through the process. The `sutr` CLI will automatically check for updates to core packages, so make sure you update when available. To play around with your Superuser package locally;
+You'll be walked through the process. The `sup` CLI will automatically check for updates to core packages, so make sure you update when available. To play around with your Superuser package locally;
 
 ```sh
-$ sutr serve
+$ sup serve
 ```
 
 Will start an HTTP server. To execute a standalone endpoint / tool:
 
 ```sh
 # run functions/index.js
-$ sutr run /
+$ sup run /
 
 # run functions/some-endpoint.js
-$ sutr run some-endpoint
+$ sup run some-endpoint
 
 # run functions/index.js with {"name":"hello"} POST parameters
-$ sutr run / --name hello
+$ sup run / --name hello
 ```
 
 ## Creating tools aka endpoints
@@ -49,7 +49,7 @@ All endpoints for Superuser packages live in the `functions/` directory. Each fi
 You can create a new endpoint with:
 
 ```sh
-$ sutr g:endpoint hello
+$ sup g:endpoint hello
 ```
 
 ```javascript
@@ -79,48 +79,18 @@ Superuser will **automatically install** NPM packages on deployment, we do not u
 
 ## Deploy an Superuser Package
 
-### Public packages
-
-{% hint style="info" %}
-You **will not** be billed for other people using your public packages. They are billed directly from their account.
-{% endhint %}
-
-By default all packages are created as public projects. Public projects are namespaced to your username, e.g. `@my-username/project`. This can be found in the `"name"` field of `instant.package.json`.
-
-Note that the code for public projects will be shared publicly for anybody to see, and the expectation is that others can use this code in their bots as well. they will be billed from their balance.
-
 To deploy a public project to a `development` environment, you can use:
 
 ```
-$ sutr publish
+$ sup publish
 ```
 
 You can also publish to `staging` and `production` using:
 
 ```
-$ sutr publish --env staging
-$ sutr publish --env production
+$ sup publish --env staging
+$ sup publish --env production
 ```
-
-### Private packages
-
-{% hint style="warning" %}
-Private packages are in beta and are currently only publishable via our command line tools. We expect the functionality may change.
-{% endhint %}
-
-{% hint style="info" %}
-You **will be billed** for all usage of your private packages. However, all code and endpoints will not be publicly available; you must share the URL with somebody in order for them to use it.
-{% endhint %}
-
-You can publish private project by prepending `private/` on the `"name"` field in `instant.package.json`, e.g.
-
-```
-{
-  "name": "private/@my-username/private-package"
-}
-```
-
-You then deploy as normal. These packages will be visible by you in the registry but nobody else.
 
 ## Additional utilities
 
@@ -130,15 +100,15 @@ There are a few additional utilities you may find useful with this package;
 
 ```sh
 # generates functions/my-endpoint/example.js
-$ sutr g:endpoint my-endpoint/example
+$ sup g:endpoint my-endpoint/example
 ```
 
 ### Generate tests
 
 ```sh
 # Generate blank tests or ones for an endpoint
-$ sutr g:test my_test # OR ...
-$ sutr g:test --endpoint my-endpoint/example
+$ sup g:test my_test # OR ...
+$ sup g:test --endpoint my-endpoint/example
 ```
 
 ### Run tests
@@ -146,7 +116,7 @@ $ sutr g:test --endpoint my-endpoint/example
 You can write tests for your tools to verify they work. Simply run;
 
 ```sh
-$ sutr test
+$ sup test
 ```
 
 Your tests in the `test/` directory will be run top-down with shallow folders first, and alphabetically.
@@ -155,7 +125,7 @@ Your tests in the `test/` directory will be run top-down with shallow folders fi
 
 {% hint style="danger" %}
 Be careful when using environment variables with public packages.\
-By default **we do not expose .env files** in public package code, so your secrets are safe and encrypted. However, all Superuser users can run public package code — so if you expose any of your secrets in endpoint results or logs they may leak.
+By default **we do not expose .env files** in public package code, so your secrets are safe and encrypted. However, all Superuser users can run public package code: it is recommended you do NOT log or return these variables.
 {% endhint %}
 
 You can store environment variables with your packages in the root directory as:
@@ -165,5 +135,7 @@ You can store environment variables with your packages in the root directory as:
 .env.staging
 .env.production
 ```
+
+Your environment variables will then be available in code via `process.env.VAR_NAME`.
 
 These files **will not** be published for everybody to see, so you can use them to hide secrets within your code. However, be careful when using environment variables with public packages: if you ever return them in an endpoint response, or connect to sensitive data, there's a chance you may expose that information to another user of the platform.
