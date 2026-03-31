@@ -14,7 +14,7 @@ We will auto-populate the instruction prompt with something simple for you to ge
 
 <figure><img src="../.gitbook/assets/SCR-20250507-jyxe.png" alt=""><figcaption><p>Modify your instruction prompt</p></figcaption></figure>
 
-If you’d just like to start talking to your bot, you can proceed with the default prompt we provide, but we recommend modifying it to suit your needs. For more information on instruction prompts, visit the dedicated page: [modifying-instruction-prompt.md](../modifying-instruction-prompt.md "mention").
+If you’d just like to start talking to your bot, you can proceed with the default prompt we provide, but we recommend modifying it to suit your needs. For more information on instruction prompts, visit the dedicated page: [modifying-instruction-prompt.md](modifying-instruction-prompt.md "mention").
 
 ## Linking to Discord (optional)
 
@@ -42,10 +42,10 @@ You’ll be brought to a chat interface and will automatically send a hello mess
 
 Congratulations! You have now built your first agent on Superuser. However, you’ll notice a lot of tabs to configure your new bot — **Packages**, **Keychain**, **Code** and **Settings**. To read more, check out the reference pages.
 
-* [Modifying instruction prompt](../modifying-instruction-prompt.md)
-* [Customizing your agent settings](../customizing-your-agent-settings.md)
-* [Installing tools via packages](../installing-tools-via-packages.md)
-* [Managing secrets via API keychain](../managing-secrets-via-api-keychain.md)
-* [Private tools via custom code](../private-tools-via-custom-code.md)
+* [Modifying instruction prompt](modifying-instruction-prompt.md)
+* [Customizing your agent settings](customizing-your-agent-settings.md)
+* [Installing tools via packages](installing-tools-via-packages.md)
+* [Managing secrets via API keychain](managing-secrets-via-api-keychain.md)
+* [Private tools via custom code](private-tools-via-custom-code.md)
 
 From the entire Superuser team, happy building!

@@ -14,19 +14,19 @@ Custom code packages **are not open source**. They are not published to our regi
 
 This page serves as an introduction to writing custom code inside of our online IDE. For the most comprehensive, in-depth guide to packages please visit:
 
-{% content-ref url="specifications/package-specification.md" %}
-[package-specification.md](specifications/package-specification.md)
+{% content-ref url="../specifications/package-specification.md" %}
+[package-specification.md](../specifications/package-specification.md)
 {% endcontent-ref %}
 
 ## Writing custom code
 
 Click on the **Code** tab for your agent to create your own custom code package. A **light grey dot** indicates that your custom code package has not yet been deployed: it is not live.
 
-<figure><img src=".gitbook/assets/SCR-20250515-bffx.png" alt=""><figcaption><p>Grey indicates "not live"</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250515-bffx.png" alt=""><figcaption><p>Grey indicates "not live"</p></figcaption></figure>
 
 Your custom code package, by default, is a simple "hello world" function. You can deploy your code and make it live by hitting the **\[Post >]** button, which will deploy your code and test the endpoint you're looking at with an HTTP POST request. Click the **\[Post >]** button to deploy and test.
 
-<figure><img src=".gitbook/assets/SCR-20250515-bgmg.png" alt=""><figcaption><p>Once you click <strong>Post</strong>, the function / tool is executed</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250515-bgmg.png" alt=""><figcaption><p>Once you click <strong>Post</strong>, the function / tool is executed</p></figcaption></figure>
 
 You can see the results of the tool request right in the online IDE. You can make as many changes as you want, every time you **Save** (press the button or type command + S) your new code package will be deployed. Running your package by pressing **\[Post >]** will automatically deploy and run your code package.
 
@@ -36,13 +36,13 @@ Custom code package functionality is dictated by the [Instant API framework](htt
 
 You can change the HTTP method by changing the name of the function, for example a **GET request** would look like:
 
-<figure><img src=".gitbook/assets/SCR-20250515-biqe.png" alt=""><figcaption><p>Execute an HTTP GET request</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250515-biqe.png" alt=""><figcaption><p>Execute an HTTP GET request</p></figcaption></figure>
 
 You'll notice the online IDE automatically changes the **\[Post >]** button to **\[Get >]** — it will by default find the first exported function and default to that.
 
 To change which HTTP method you want to use, click the **cog** icon next to the HTTP method:
 
-<figure><img src=".gitbook/assets/SCR-20250515-bjqq.png" alt=""><figcaption><p>Set custom payloads</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250515-bjqq.png" alt=""><figcaption><p>Set custom payloads</p></figcaption></figure>
 
 You can change sample payloads for each endpoint / tool using this window. When you hit the run button (or type command + enter) you'll execute the currently selected method with the currently set payload for that method.
 
@@ -50,7 +50,7 @@ You can change sample payloads for each endpoint / tool using this window. When 
 
 We support most NPM packages on Superuser. You can import NPM packages by using the appropriate `import x from 'package'` syntax. For example, the Stripe package, `import Stripe from 'stripe'` should give the following result:
 
-<figure><img src=".gitbook/assets/SCR-20250515-bkyj.png" alt=""><figcaption><p>Install the Stripe package</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250515-bkyj.png" alt=""><figcaption><p>Install the Stripe package</p></figcaption></figure>
 
 NPM packages will be installed automatically. We support any NPM package without custom binaries and a number of them with. Currently **puppeteer** is unsupported, but if you have a strong use case please drop us feedback at [feedback@superuser.app](mailto:feedback@superuser.app).
 
@@ -58,7 +58,7 @@ NPM packages will be installed automatically. We support any NPM package without
 
 If you're not happy with our online IDE, you can eject at any time to our [command line tools — sutr](https://github.com/superuserapp/superuser-cli). You just need to make sure you have the correct **name** set in `instant.package.json`.
 
-<figure><img src=".gitbook/assets/SCR-20250515-bmxb.png" alt=""><figcaption><p>Set the package name properly</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250515-bmxb.png" alt=""><figcaption><p>Set the package name properly</p></figcaption></figure>
 
 The `sutr` command line utilities allow you to check your work into git, write tests and more. Please [check out our CLI on Github](https://github.com/superuserapp/superuser-cli).
 

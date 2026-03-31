@@ -2,7 +2,7 @@
 
 ## What is an instruction prompt?
 
-> _In AI, a prompt is a piece of text, a question, or a command that you provide to an AI model to generate a response or perform a task. It's essentially the input that guides the AI to produce the desired output._&#x20;
+> _In AI, a prompt is a piece of text, a question, or a command that you provide to an AI model to generate a response or perform a task. It's essentially the input that guides the AI to produce the desired output._
 >
 > — Google Gemini, reflecting on its own control mechanisms
 
@@ -12,11 +12,11 @@ Your **instruction prompt** contains instructions you expect your agent to follo
 
 To modify your agent's instruction prompt, visit the **Settings** tab when viewing your agent. It's at the top right of the window with a cog icon. In mobile view this will just be a cog icon.
 
-<figure><img src=".gitbook/assets/SCR-20250514-jzyi.png" alt=""><figcaption><p>Find the settings icon, at the top right of your window</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-jzyi.png" alt=""><figcaption><p>Find the settings icon, at the top right of your window</p></figcaption></figure>
 
 From here you can modify your instruction prompt by **double-clicking** on the prompt, or **single-clicking** the edit icon beside the prompt.
 
-<figure><img src=".gitbook/assets/SCR-20250514-okch.png" alt=""><figcaption><p>Double-click or click the edit button to modify</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-okch.png" alt=""><figcaption><p>Double-click or click the edit button to modify</p></figcaption></figure>
 
 Once you are finished modifying your instruction prompt, you can save by click the edit button, which should now appear as a checkmark, or simply by clicking away from the prompt.
 

@@ -6,7 +6,7 @@ Packages are collections of tools that you can use to extend your agent like [ge
 
 ### Technical details
 
-Each tool is a **function** that takes **arguments** a.k.a. request parameters and returns a **response**. You can read more about packages on [Package overview](specifications/package-specification.md), but in the most basic sense packages are a group of related functions will take some input and return an output.
+Each tool is a **function** that takes **arguments** a.k.a. request parameters and returns a **response**. You can read more about packages on [Package overview](../specifications/package-specification.md), but in the most basic sense packages are a group of related functions will take some input and return an output.
 
 ```
 fn(input) = output
@@ -23,23 +23,23 @@ Packages are standalone REST HTTP API servers. They run on auto-scaling serverle
 
 You can manage your agent's installed packages via the **Packages** tab in the top toolbar on your agent's chat page. When you click this tab you'll be able to see your installed packages.
 
-<figure><img src=".gitbook/assets/SCR-20250514-pgtg.png" alt=""><figcaption><p>View your installed packages.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-pgtg.png" alt=""><figcaption><p>View your installed packages.</p></figcaption></figure>
 
 By default your agent won't have any packages installed. In this case you can select the **Discover** sub-tab to find suitable packages.
 
-<figure><img src=".gitbook/assets/SCR-20250514-phvs.png" alt=""><figcaption><p>See packages approved by the team</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-phvs.png" alt=""><figcaption><p>See packages approved by the team</p></figcaption></figure>
 
 The **Discover** tab will **only show approved packages**, that is, packages that have been vetted by the Superuser team for security and authenticity purposes. Before we install a package, we can check the package details by **clicking on the name** or by **clicking the eye button** to view individual endpoint settings.
 
-<figure><img src=".gitbook/assets/SCR-20250514-pial.png" alt=""><figcaption><p>Click the eye button to view tools and settings for the package</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-pial.png" alt=""><figcaption><p>Click the eye button to view tools and settings for the package</p></figcaption></figure>
 
 For the **current weather** package, we can click the eye button to see which endpoints it has before installing. From here we can toggle individual tools on or off.
 
-<figure><img src=".gitbook/assets/SCR-20250514-pihb.png" alt=""><figcaption><p>Turn individual tools on our off</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-pihb.png" alt=""><figcaption><p>Turn individual tools on our off</p></figcaption></figure>
 
 For this package, there is only one tool. We want it enabled! So let's go ahead and click **\[ + Install ]**. You should see a popup like below:
 
-<figure><img src=".gitbook/assets/SCR-20250514-piqr.png" alt=""><figcaption><p>Package installed successfully</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-piqr.png" alt=""><figcaption><p>Package installed successfully</p></figcaption></figure>
 
 That's it! You should now be able to use the current weather package.
 
@@ -58,12 +58,12 @@ And your agent should go through two steps:
 
 The result should look something like this:
 
-<figure><img src=".gitbook/assets/SCR-20250514-pkuy.png" alt=""><figcaption><p>It got the weather for me!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-pkuy.png" alt=""><figcaption><p>It got the weather for me!</p></figcaption></figure>
 
 You can click on either the **Thought \[...]** button (in this case, _Thought for 2.35 seconds_) or the **Function \[...]** button (_Retrieves current weather..._) to expand details and see how your agent thought about this task and executed on it:
 
-<figure><img src=".gitbook/assets/SCR-20250514-pldr.png" alt=""><figcaption><p>Planning details</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-pldr.png" alt=""><figcaption><p>Planning details</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/SCR-20250514-pkxh.png" alt=""><figcaption><p>Tool call details</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-pkxh.png" alt=""><figcaption><p>Tool call details</p></figcaption></figure>
 
 You can use these buttons to debug your agent and figure out which packages and tools work best.

@@ -6,7 +6,7 @@ description: A guide to packages on Superuser
 
 ## Overview
 
-All packages on Superuser are available as both **REST API servers** and **MCP servers**. They are hosted on `{package}.superuser.app` and expose HTTP endpoints that act as tools. They are built using the [Instant API framework](https://gitub.com/instant-dev/api), a JavaScript framework and gateway that turns JavaScript functions into type-validated HTTP endpoints with built-in bindings for the MCP Streamable HTTP specification.
+All packages on Superuser are available as both **REST API servers** and **MCP servers**. They are hosted on `{package}.su.dev` and expose HTTP endpoints that act as tools. They are built using the [Instant API framework](https://gitub.com/instant-dev/api), a JavaScript framework and gateway that turns JavaScript functions into type-validated HTTP endpoints with built-in bindings for the MCP Streamable HTTP specification.
 
 **REST** means **Re**presentational **S**tate **T**ransfer and is a fancy way of saying these servers expose endpoints that support multiple HTTP verbs: `GET`, `POST`, `PUT`, `DELETE`.
 
@@ -34,7 +34,7 @@ The Superuser package registry automatically hosts and scales your Instant API p
 
 ### Our registry domain
 
-All packages for Superuser are hosted on our gateway at `{package}.instant.host`
+All packages for Superuser are hosted on our gateway at `{package}.su.dev`
 
 ### Authentication and making requests
 
@@ -69,7 +69,7 @@ package.json          # traditional node.js package.json
 
 As you can see, Superuser packages use **file-based routing**. Everything exported from the `functions/` folder is available as an API endpoint.
 
-## instant.package.json
+## superuser.json
 
 This is your Superuser package configuration. It typically has the following format;
 
@@ -88,7 +88,7 @@ The default timeout for Superuser packages is 10 seconds. This means tools that 
 
 ### Setting required keychain keys
 
-Public packages can request secret keys from API keychains. For example, the [Stripe customers package](https://superuser.app/toolkits/@keith/stripe) requires a **STRIPE\_SECRET\_KEY** to use it successfully. To set these per package, add them to your `instant.package.json` like so:
+Public packages can request secret keys from API keychains. For example, the [Stripe customers package](https://superuser.app/toolkits/@keith/stripe) requires a **STRIPE\_SECRET\_KEY** to use it successfully. To set these per package, add them to your `superuser.json` like so:
 
 ```json
 {
@@ -647,5 +647,4 @@ With Instant API, **query and body parameters can be used interchangeably**. If 
 
 ## That's it!
 
-That covers the basics of building packages on Superuser. If you have any questions, please do not hesitate to jump into our community Discord server at [discord.gg/instant](https://discord.gg/instant).
-
+That covers the basics of building packages on Superuser. If you have any questions, please do not hesitate to jump into our community Discord server at [discord.gg/superuser](https://discord.gg/superuser).

@@ -5,17 +5,14 @@
 ## Getting started
 
 * [Creating a new agent](getting-started/creating-a-new-agent.md)
-
-***
-
-* [Customizing your agent settings](customizing-your-agent-settings.md)
-* [Modifying instruction prompt](modifying-instruction-prompt.md)
-* [Installing tools via packages](installing-tools-via-packages.md)
-* [Managing secrets via API keychain](managing-secrets-via-api-keychain.md)
-* [Private tools via custom code](private-tools-via-custom-code.md)
-* [Optimizing tool calls](optimizing-tool-calls.md)
-* [Archiving your agent](archiving-your-agent.md)
-* [Removing your custom code](removing-your-custom-code.md)
+* [Customizing your agent settings](getting-started/customizing-your-agent-settings.md)
+* [Modifying instruction prompt](getting-started/modifying-instruction-prompt.md)
+* [Installing tools via packages](getting-started/installing-tools-via-packages.md)
+* [Managing secrets via API keychain](getting-started/managing-secrets-via-api-keychain.md)
+* [Private tools via custom code](getting-started/private-tools-via-custom-code.md)
+* [Optimizing tool calls](getting-started/optimizing-tool-calls.md)
+* [Archiving your agent](getting-started/archiving-your-agent.md)
+* [Removing your custom code](getting-started/removing-your-custom-code.md)
 
 ## Specifications
 

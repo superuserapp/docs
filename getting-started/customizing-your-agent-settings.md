@@ -15,7 +15,7 @@ If you would like to customize a part of your agent you don't see here, please c
 
 All agent settings can be customized from the **Settings** tab in the top right of your agent's chat page.
 
-<figure><img src=".gitbook/assets/SCR-20250514-jzyi.png" alt=""><figcaption><p>Click here to customize agent settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-jzyi.png" alt=""><figcaption><p>Click here to customize agent settings</p></figcaption></figure>
 
 From here, we can configure the **display name**, **profile picture**, **instruction prompt**, and **connections**. More information about instructions prompts can be found here:
 
@@ -25,7 +25,7 @@ From here, we can configure the **display name**, **profile picture**, **instruc
 
 To modify the display name, profile picture, or connections simply click on the corresponding button. For display name, it's the edit button next to the name. For profile picture, it's the upload icon next to the profile picture itself, however clicking on the profile picture will also work. Finally, for changing third-party connections like Discord, just click the **\[ + Link a new Discord server ]** button and follow the instructions.
 
-<figure><img src=".gitbook/assets/SCR-20250514-ooil.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/SCR-20250514-ooil.png" alt=""><figcaption></figcaption></figure>
 
 ## Display name
 
@@ -43,13 +43,13 @@ Your agent's profile picture controls how it appears on the Superuser web interf
 
 Connections are how you deploy your agent to places where you work or you expect your users to interact with your agent. Currently we support;
 
-* [On the web](using-your-agent/on-the-web.md) (default, via Superuser)
-* [Discord](using-your-agent/discord.md)
+* [On the web](../using-your-agent/on-the-web.md) (default, via Superuser)
+* [Discord](../using-your-agent/discord.md)
 
 We have the following connections planned;
 
-* [Slack](using-your-agent/slack.md)
-* [Website embed](using-your-agent/website-embed.md)
-* [Developer API](using-your-agent/developer-api.md)
+* [Slack](../using-your-agent/slack.md)
+* [Website embed](../using-your-agent/website-embed.md)
+* [Developer API](../using-your-agent/developer-api.md)
 
 You can reach out to us at [feedback@superuser.app](mailto:feedback@superuser.app) if you'd like anything prioritized here!

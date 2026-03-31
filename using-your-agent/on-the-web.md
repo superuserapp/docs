@@ -24,7 +24,7 @@ Your agent will spend a little bit of time thinking before sending each response
 
 <figure><img src="../.gitbook/assets/SCR-20250515-mbrd.png" alt=""><figcaption><p>See the agent's planning process</p></figcaption></figure>
 
-Typically you'll see a **\[Memory]** and **\[Functions]** setting which shows you how your agent is processing things you've said previously and any tools it may want to call. You can use these thoughts to help debug: if your agent is a little over-eager to execute certain tools, try [modifying your instruction prompt](../modifying-instruction-prompt.md) to compensate.
+Typically you'll see a **\[Memory]** and **\[Functions]** setting which shows you how your agent is processing things you've said previously and any tools it may want to call. You can use these thoughts to help debug: if your agent is a little over-eager to execute certain tools, try [modifying your instruction prompt](../getting-started/modifying-instruction-prompt.md) to compensate.
 
 ### Tool calls
 
@@ -50,7 +50,7 @@ If the expected result of a tool call is of type `buffer` (see [package-specific
 
 <figure><img src="../.gitbook/assets/SCR-20250515-mrfo.png" alt=""><figcaption><p>Generate an image and an attachment</p></figcaption></figure>
 
-If the result of the tool call has a `Content-Type: image/*` header then the image will automatically be loaded in the chat as an attachment once complete.&#x20;
+If the result of the tool call has a `Content-Type: image/*` header then the image will automatically be loaded in the chat as an attachment once complete.
 
 <figure><img src="../.gitbook/assets/SCR-20250515-mrnq.png" alt=""><figcaption><p>Images are display inline</p></figcaption></figure>
 

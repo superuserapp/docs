@@ -115,7 +115,7 @@ export default async function (context) {
 
 ## Using your agent's API keychain
 
-Your agent automatically has an API keychain assigned to it when it is created. It uses this API keychain to manage package access and share secrets with packages. All of this is handled directly via Superuser, and you can read more at [managing-secrets-via-api-keychain.md](../managing-secrets-via-api-keychain.md "mention").
+Your agent automatically has an API keychain assigned to it when it is created. It uses this API keychain to manage package access and share secrets with packages. All of this is handled directly via Superuser, and you can read more at [managing-secrets-via-api-keychain.md](../getting-started/managing-secrets-via-api-keychain.md "mention").
 
 ## Using API keychains for authentication
 
