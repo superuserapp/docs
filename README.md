@@ -58,7 +58,7 @@ You can view up-to-date pricing at [Superuser / Pricing](https://superuser.app/p
 * All **person-to-person chat** is **completely free**
 * We charge a monthly subscription fee for access to agents
   * Starting at $20 / mo for 5,000 messages / month
-  * Overage is charge per-token to your credit balance
+  * Overage is charged per-token to your credit balance
 * We charge per-use for hosted tools at a rate of 50 credits per 1,000 GB-s of usage
   * 200ms execution for a hosted tool with 512MB of RAM is 0.005 credits
   * 1,000 function calls at this rate would be 5 credits
